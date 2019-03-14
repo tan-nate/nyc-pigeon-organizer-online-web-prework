@@ -24,7 +24,9 @@ def nyc_pigeon_organizer(data)
   data.each do |category, category_hash|
     category_hash.each do |type, members|
       #binding.pry
-      new_hash[members][category] = []
+      members.each do |member|
+        new_hash[member][category] = []
+      end
     end
   end
   binding.pry
