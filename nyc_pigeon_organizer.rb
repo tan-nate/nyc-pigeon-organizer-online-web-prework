@@ -38,7 +38,7 @@ def nyc_pigeon_organizer(data)
     category_hash.each do |type, members|
       new_hash.each do |member, member_hash|
         if members.include?(member)
-          new_hash[member][category] << type
+          new_hash[member][category] << type.to_s
         end
       end
     end
