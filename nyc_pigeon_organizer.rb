@@ -5,4 +5,5 @@ def nyc_pigeon_organizer(data)
       new_hash[members][category] = []
     end
   end
+  binding.pry
 end
